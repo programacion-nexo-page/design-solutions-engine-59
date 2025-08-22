@@ -67,13 +67,17 @@ Para actualizar el sitio:
 
 ## Troubleshooting
 
-**Problema**: Página en blanco o errores 404
-**Solución**: Verifica que el archivo `.htaccess` esté presente en la raíz
+**PROBLEMA MÁS COMÚN: Página completamente en blanco**
+**Causas y soluciones**:
+1. **Archivo .htaccess faltante**: Asegúrate de que esté en la raíz
+2. **Archivos mal subidos**: Sube el CONTENIDO de la carpeta `dist`, no la carpeta completa
+3. **JavaScript bloqueado**: Revisa la consola del navegador (F12 → Console) para errores
+4. **Permisos incorrectos**: Archivos deben ser 644, carpetas 755
 
 **Problema**: CSS no carga
 **Solución**: Asegúrate de subir la carpeta `assets/` completa
 
-**Problema**: Rutas no funcionan
+**Problema**: Rutas no funcionan al recargar
 **Solución**: El archivo `.htaccess` debe estar en la raíz del dominio
 
 ## Formulario de Contacto

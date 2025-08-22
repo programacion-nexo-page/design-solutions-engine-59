@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Base path for production (leave empty for root domain deployment)
-  base: "/",
+  // Base path for production deployment
+  base: mode === "production" ? "./" : "/",
   
   // Build configuration for cPanel compatibility
   build: {
